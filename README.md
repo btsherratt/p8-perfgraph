@@ -16,6 +16,7 @@ Full example:
 
 ::l::
 
+p_start("frame")
 p_start("complicated 1")
 for i=0,100 do
 	circfill(rnd()*128,rnd()*128,rnd()*100,rnd()*16)
@@ -27,10 +28,13 @@ for i=0,100 do
 	circ(rnd()*128,rnd()*128,rnd()*100,rnd()*16)
 end
 p_end("complicated 2")
+p_end("frame")
 
 p_show(1,1,32)
 
 flip()
+
+goto l
 
 ```
 
